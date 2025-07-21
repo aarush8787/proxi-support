@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxi Support</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      font-family: 'Inter', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .center-section {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .layout {
+      width: 100%;
+      max-width: 48rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 0;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.03em;
+      text-align: center;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #3b82f6, #2563eb, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 2px 6px rgba(59,130,246,0.2));
+      font-weight: 800;
+    }
+    .desc {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.125rem;
+      color: #d1d5db;
+      font-weight: 500;
+      text-align: center;
+      max-width: 42rem;
+    }
+    .screenshots {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .screenshots {
+        flex-direction: row;
+      }
+      h1 {
+        font-size: 3.75rem;
+      }
+      .desc {
+        font-size: 1.25rem;
+      }
+    }
+    .screenshot-img {
+      width: 16rem;
+      height: 16rem;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid #374151;
+    }
+    .contact-btn {
+      margin-top: 1rem;
+      display: inline-block;
+      border-radius: 0.5rem;
+      border: 1px solid #fff;
+      background: #fff;
+      padding: 0.75rem 2rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      text-decoration: none;
+      transition: all 0.2s;
+      outline: none;
+    }
+    .contact-btn:hover, .contact-btn:focus {
+      background: #000;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.95rem;
+      padding: 1rem 0;
+      border-top: 1px solid #1f2937;
+      margin-top: auto;
+    }
+    .footer-gradient {
+      background: linear-gradient(to right, #3b82f6, #2563eb, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="center-section">
+      <div class="layout">
+        <h1>
+          <span class="gradient-text">Proxi</span> <span>Support</span>
+        </h1>
+        <p class="desc">
+          Proxi is a wearable ultra-wideband (UWB) badge paired with a mobile app that helps users locate friends at crowded events using a real-time “hot-cold” interface. Unlike GPS-based tools, Proxi uses precise UWB ranging to deliver accuracy within 20 cm, even indoors or in dense festival environments without WiFi. Designed for concerts, college campuses, and conferences, Proxi lets users connect with friends — and even discover new ones — without the battery drain, or delay and inaccuracy of traditional location sharing.
+        </p>
+        <div class="screenshots">
+          <img src="p1.png" alt="Proxi app screenshot 1" class="screenshot-img" />
+          <img src="p2.png" alt="Proxi app screenshot 2" class="screenshot-img" />
+          <img src="p3.png" alt="Proxi app screenshot 3" class="screenshot-img" />
+        </div>
+        <a href="mailto:superkatiebros@gmail.com" class="contact-btn">Contact Support</a>
+      </div>
+      <footer>
+        © 2025 <span class="footer-gradient">Proxi</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html> 
